@@ -1,0 +1,28 @@
+#include "Persona.cpp"
+#include <iostream>
+using namespace std;
+
+class Estudiante : Persona{
+	// atributo estudiante
+	private : string carnet;
+	// constructor
+	public : 
+	Estudiante (){
+	}
+	Estudiante(string nom, string ape, string dir, int tel, string fn,string ca) : 
+	Persona(nom,ape,dir,tel,fn){
+		carnet = ca;
+	}
+	//Metodo
+	void leer(){
+		cout<<carnet<<endl;
+		cout<<nombres<<endl;
+		cout<<apellidos<<endl;
+		cout<<direccion<<endl;
+		cout<<telefono<<endl;
+		cout<<fecha_nacimiento<<endl;
+	}
+	
+};
+
+
